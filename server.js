@@ -1,3 +1,4 @@
+const inquirer = require('inquirer');
 const express = require('express');
 const { Pool } = require('pg');
 
@@ -18,3 +19,5 @@ const pool = new Pool (
 )
 
 pool.connect();
+
+// Create an employee
