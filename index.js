@@ -1,3 +1,6 @@
+// Necessary/Global Variables
+const CLI = require('./lib/cli');
+
 // Inquirer prompt for selecting menu options
 
 inquirer
@@ -44,7 +47,7 @@ inquirer
     },
   ])
   .then((answers) => {
-    
+
   })
 
   Init();
