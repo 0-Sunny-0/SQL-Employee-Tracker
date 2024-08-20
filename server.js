@@ -10,8 +10,8 @@ const app = express();
 
 const pool = new Pool (
     {
-        user: '',
-        password: '',
+        user: 'postgres',
+        password: 'BootCamp213',
         host: 'localhost',
         database: 'employee_db'
     },
@@ -20,4 +20,3 @@ const pool = new Pool (
 
 pool.connect();
 
-// Create an employee
