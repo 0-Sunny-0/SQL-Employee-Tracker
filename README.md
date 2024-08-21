@@ -8,7 +8,6 @@
 - [Usage](#Usage)<br>
 - [Contributing](#Contributing)<br>
 - [License](#license)<br>
-- [Tests](#Tests)<br>
 - [Questions](#Questions)<br>
 
 ## Description
