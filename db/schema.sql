@@ -8,7 +8,7 @@ CREATE TABLE department (
     name VARCHAR(30) UNIQUE NOT NULL
 );
 
-CREATE TABLE roll (
+CREATE TABLE role (
     id SERIAL PRIMARY KEY,
     title VARCHAR(30) UNIQUE NOT NULL,
     salary DECIMAL NOT NULL,
@@ -20,5 +20,5 @@ CREATE TABLE employee (
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     role_id INTEGER NOT NULL,
-    manager_id INTEGER,
+    manager_id INTEGER
 );

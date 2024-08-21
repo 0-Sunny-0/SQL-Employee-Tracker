@@ -1,13 +1,17 @@
 // Necessary/Global Variables
-const CLI = require('./lib/cli');
+const inquirer = require('inquirer');
+// Import library js files
+const department = require('./lib/department');
+const employee = require('./lib/employee');
+const role = require('./lib/role');
 
 // Inquirer prompt for selecting menu options
-
+// wrap this all in a function and then call it via recursion after your code is ran
 inquirer
   .prompt([
     {
       type: 'list',
-      name: 'menu-display',
+      name: 'menu_display',
       message: 'What would you like to do?',
       choices: [
         "View all departments",
@@ -20,34 +24,52 @@ inquirer
         "Quit",
       ]
     },
-    {
-      type: 'input',
-      name: '',
-      message: '',
-    },
-    {
-      type: 'input',
-      name: '',
-      message: '',
-    }  
-    {
-      type: 'input',
-      name: '',
-      message: '',
-    },
-    {
-      type: 'input',
-      name: '',
-      message: '',
-    },
-    {
-      type: 'input',
-      name: '',
-      message: '',
-    },
   ])
   .then((answers) => {
-
+    const res = answers.menu_display;
+    // if(res === "Add a department") {
+    //   addDepartment();
+    // } else if ()
+    switch (res){
+      case "Add a department":
+        //logic of addDepartment()
+        // recursion?
+        break;
+      case "View all departments":
+        //logic of viewDepartments()
+        break;
+      default: 
+      //else statement
+        break;
+    }
   })
 
-  Init();
+    // additional inputs are not needed, as the inquirer prompt will be in a function and call itself. 
+    // {
+    //   type: 'input',
+    //   name: '',
+    //   message: '',
+    // },
+    // {
+    //   type: 'input',
+    //   name: '',
+    //   message: '',
+    // }  
+    // {
+    //   type: 'input',
+    //   name: '',
+    //   message: '',
+    // },
+    // {
+    //   type: 'input',
+    //   name: '',
+    //   message: '',
+    // },
+    // {
+    //   type: 'input',
+    //   name: '',
+    //   message: '',
+    // },
+  
+
+  // init();
