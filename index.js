@@ -21,7 +21,7 @@ inquirer
         "Add a role",
         "Add an employee",
         "Update an employee",
-        "Quit",
+        "Exit Menu",
       ]
     },
   ])
@@ -71,5 +71,5 @@ inquirer
     //   message: '',
     // },
   
-
+// Come back to this
   // init();
