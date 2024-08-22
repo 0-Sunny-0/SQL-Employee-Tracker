@@ -32,6 +32,7 @@ inquirer
     // } else if ()
     switch (res){
       case "Add a department":
+        // node fetch to the path (department, role, employee)
         //logic of addDepartment()
         // recursion?
         break;
@@ -43,6 +44,10 @@ inquirer
         break;
     }
   })
+
+  // Case needs to be made for each menu selection in above function
+  // Res needs to be changed on line 33 to answers. 
+  // instead of console.log do console.table so it returns the actual table of data
 
     // additional inputs are not needed, as the inquirer prompt will be in a function and call itself. 
     // {
